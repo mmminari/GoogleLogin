@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6DECBF831E446189009B7522 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DECBF821E446189009B7522 /* main.m */; };
+		6DECBF861E446189009B7522 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DECBF851E446189009B7522 /* AppDelegate.m */; };
+		6DECBF891E446189009B7522 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DECBF881E446189009B7522 /* ViewController.m */; };
+		6DECBF8C1E446189009B7522 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DECBF8A1E446189009B7522 /* Main.storyboard */; };
+		6DECBF8E1E446189009B7522 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DECBF8D1E446189009B7522 /* Assets.xcassets */; };
+		6DECBF911E446189009B7522 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6DECBF8F1E446189009B7522 /* LaunchScreen.storyboard */; };
+		6DECBF9C1E446189009B7522 /* GoogleLoginTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DECBF9B1E446189009B7522 /* GoogleLoginTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6DECBF981E446189009B7522 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DECBF761E446189009B7522 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DECBF7D1E446189009B7522;
+			remoteInfo = GoogleLogin;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6DECBF7E1E446189009B7522 /* GoogleLogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoogleLogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DECBF821E446189009B7522 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6DECBF841E446189009B7522 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6DECBF851E446189009B7522 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6DECBF871E446189009B7522 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6DECBF881E446189009B7522 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6DECBF8B1E446189009B7522 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6DECBF8D1E446189009B7522 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6DECBF901E446189009B7522 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6DECBF921E446189009B7522 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6DECBF971E446189009B7522 /* GoogleLoginTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoogleLoginTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DECBF9B1E446189009B7522 /* GoogleLoginTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoogleLoginTests.m; sourceTree = "<group>"; };
+		6DECBF9D1E446189009B7522 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6DECBF7B1E446189009B7522 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DECBF941E446189009B7522 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6DECBF751E446189009B7522 = {
+			isa = PBXGroup;
+			children = (
+				6DECBF801E446189009B7522 /* GoogleLogin */,
+				6DECBF9A1E446189009B7522 /* GoogleLoginTests */,
+				6DECBF7F1E446189009B7522 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6DECBF7F1E446189009B7522 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DECBF7E1E446189009B7522 /* GoogleLogin.app */,
+				6DECBF971E446189009B7522 /* GoogleLoginTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6DECBF801E446189009B7522 /* GoogleLogin */ = {
+			isa = PBXGroup;
+			children = (
+				6DECBF841E446189009B7522 /* AppDelegate.h */,
+				6DECBF851E446189009B7522 /* AppDelegate.m */,
+				6DECBF871E446189009B7522 /* ViewController.h */,
+				6DECBF881E446189009B7522 /* ViewController.m */,
+				6DECBF8A1E446189009B7522 /* Main.storyboard */,
+				6DECBF8D1E446189009B7522 /* Assets.xcassets */,
+				6DECBF8F1E446189009B7522 /* LaunchScreen.storyboard */,
+				6DECBF921E446189009B7522 /* Info.plist */,
+				6DECBF811E446189009B7522 /* Supporting Files */,
+			);
+			path = GoogleLogin;
+			sourceTree = "<group>";
+		};
+		6DECBF811E446189009B7522 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6DECBF821E446189009B7522 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6DECBF9A1E446189009B7522 /* GoogleLoginTests */ = {
+			isa = PBXGroup;
+			children = (
+				6DECBF9B1E446189009B7522 /* GoogleLoginTests.m */,
+				6DECBF9D1E446189009B7522 /* Info.plist */,
+			);
+			path = GoogleLoginTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6DECBF7D1E446189009B7522 /* GoogleLogin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DECBFA01E446189009B7522 /* Build configuration list for PBXNativeTarget "GoogleLogin" */;
+			buildPhases = (
+				6DECBF7A1E446189009B7522 /* Sources */,
+				6DECBF7B1E446189009B7522 /* Frameworks */,
+				6DECBF7C1E446189009B7522 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoogleLogin;
+			productName = GoogleLogin;
+			productReference = 6DECBF7E1E446189009B7522 /* GoogleLogin.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6DECBF961E446189009B7522 /* GoogleLoginTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6DECBFA31E446189009B7522 /* Build configuration list for PBXNativeTarget "GoogleLoginTests" */;
+			buildPhases = (
+				6DECBF931E446189009B7522 /* Sources */,
+				6DECBF941E446189009B7522 /* Frameworks */,
+				6DECBF951E446189009B7522 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6DECBF991E446189009B7522 /* PBXTargetDependency */,
+			);
+			name = GoogleLoginTests;
+			productName = GoogleLoginTests;
+			productReference = 6DECBF971E446189009B7522 /* GoogleLoginTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DECBF761E446189009B7522 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "김민아";
+				TargetAttributes = {
+					6DECBF7D1E446189009B7522 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = A87J69XM38;
+						ProvisioningStyle = Automatic;
+					};
+					6DECBF961E446189009B7522 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6DECBF7D1E446189009B7522;
+					};
+				};
+			};
+			buildConfigurationList = 6DECBF791E446189009B7522 /* Build configuration list for PBXProject "GoogleLogin" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6DECBF751E446189009B7522;
+			productRefGroup = 6DECBF7F1E446189009B7522 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6DECBF7D1E446189009B7522 /* GoogleLogin */,
+				6DECBF961E446189009B7522 /* GoogleLoginTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6DECBF7C1E446189009B7522 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DECBF911E446189009B7522 /* LaunchScreen.storyboard in Resources */,
+				6DECBF8E1E446189009B7522 /* Assets.xcassets in Resources */,
+				6DECBF8C1E446189009B7522 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DECBF951E446189009B7522 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6DECBF7A1E446189009B7522 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DECBF891E446189009B7522 /* ViewController.m in Sources */,
+				6DECBF861E446189009B7522 /* AppDelegate.m in Sources */,
+				6DECBF831E446189009B7522 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6DECBF931E446189009B7522 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6DECBF9C1E446189009B7522 /* GoogleLoginTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6DECBF991E446189009B7522 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DECBF7D1E446189009B7522 /* GoogleLogin */;
+			targetProxy = 6DECBF981E446189009B7522 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6DECBF8A1E446189009B7522 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DECBF8B1E446189009B7522 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6DECBF8F1E446189009B7522 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6DECBF901E446189009B7522 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6DECBF9E1E446189009B7522 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		6DECBF9F1E446189009B7522 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6DECBFA11E446189009B7522 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A87J69XM38;
+				INFOPLIST_FILE = GoogleLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smict.GoogleLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6DECBFA21E446189009B7522 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A87J69XM38;
+				INFOPLIST_FILE = GoogleLogin/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smict.GoogleLogin;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		6DECBFA41E446189009B7522 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GoogleLoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smict.GoogleLoginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoogleLogin.app/GoogleLogin";
+			};
+			name = Debug;
+		};
+		6DECBFA51E446189009B7522 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GoogleLoginTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smict.GoogleLoginTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoogleLogin.app/GoogleLogin";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6DECBF791E446189009B7522 /* Build configuration list for PBXProject "GoogleLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DECBF9E1E446189009B7522 /* Debug */,
+				6DECBF9F1E446189009B7522 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6DECBFA01E446189009B7522 /* Build configuration list for PBXNativeTarget "GoogleLogin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DECBFA11E446189009B7522 /* Debug */,
+				6DECBFA21E446189009B7522 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6DECBFA31E446189009B7522 /* Build configuration list for PBXNativeTarget "GoogleLoginTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DECBFA41E446189009B7522 /* Debug */,
+				6DECBFA51E446189009B7522 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DECBF761E446189009B7522 /* Project object */;
+}
