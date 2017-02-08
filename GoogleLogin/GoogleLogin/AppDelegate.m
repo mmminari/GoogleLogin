@@ -43,11 +43,19 @@
 didSignInForUser:(GIDGoogleUser *)user
      withError:(NSError *)error
 {
-    self.googleUser = user;
-    
-    NSDictionary *userInfo = @{ @"userInfo" : self.googleUser };
-    
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"addGoogleUserInfo" object:nil userInfo:userInfo];
+    @try
+    {
+        self.googleUser = user;
+        
+        NSDictionary *userInfo = @{ @"userInfo" : self.googleUser };
+        
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"addGoogleUserInfo" object:nil userInfo:userInfo];
+    }
+    @catch (NSException *exception)
+    {
+        NSLog(@"exception : %@", exception.description);
+        
+    }
 }
 
 - (void)signIn:(GIDSignIn *)signIn

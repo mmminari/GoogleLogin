@@ -69,7 +69,7 @@
 - (IBAction)touchedLogOutButton:(UIButton *)sender
 {
     [[GIDSignIn sharedInstance] signOut];
-        
+    
     NSLog(@"Sign Out");
     
     [self.navigationController popViewControllerAnimated:YES];
