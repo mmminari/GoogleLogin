@@ -43,7 +43,9 @@
 didSignInForUser:(GIDGoogleUser *)user
      withError:(NSError *)error
 {
-    @try
+    NSLog(@"error code : %zd", error.code);
+    
+    if(error.code != kGIDSignInErrorCodeCanceled)
     {
         self.googleUser = user;
         
@@ -51,11 +53,7 @@ didSignInForUser:(GIDGoogleUser *)user
         
         [[NSNotificationCenter defaultCenter] postNotificationName:@"addGoogleUserInfo" object:nil userInfo:userInfo];
     }
-    @catch (NSException *exception)
-    {
-        NSLog(@"exception : %@", exception.description);
-        
-    }
+
 }
 
 - (void)signIn:(GIDSignIn *)signIn

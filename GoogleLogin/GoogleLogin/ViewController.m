@@ -27,8 +27,8 @@
 }
 
 - (IBAction)touchedGoogleSignInButton:(UIButton *)sender
-{
-    [[[GIDSignInButton alloc]init] sendActionsForControlEvents:UIControlEventTouchUpInside];
+{    
+    [[GIDSignIn sharedInstance] signIn];
 }
 
 - (void)signIn:(GIDSignIn *)signIn
