@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  DetailViewController.h
 //  GoogleLogin
 //
 //  Created by 김민아 on 2017. 2. 3..
@@ -7,11 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+
 #import <Google/SignIn.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate, GIDSignInDelegate>
+@interface DetailViewController : UIViewController
 
-@property (strong, nonatomic) UIWindow *window;
 
 @end
-

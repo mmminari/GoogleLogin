@@ -7,23 +7,41 @@
 //
 
 #import "ViewController.h"
+#import "DetailViewController.h"
 
 @interface ViewController ()
+
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.navigationController.navigationBarHidden = YES;
+    
+    [GIDSignIn sharedInstance].uiDelegate = self;
+
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)touchedGoogleSignInButton:(UIButton *)sender
+{
+    [[[GIDSignInButton alloc]init] sendActionsForControlEvents:UIControlEventTouchUpInside];
 }
+
+- (void)signIn:(GIDSignIn *)signIn
+dismissViewController:(UIViewController *)viewController
+{
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+        NSLog(@"SignInSuccess : %@", signIn);
+        
+        [self performSegueWithIdentifier:@"googleLogin" sender:self];
+    }];
+}
+
 
 
 @end

@@ -10,14 +10,51 @@
 
 @interface AppDelegate ()
 
+@property (strong, nonatomic) GIDGoogleUser *googleUser;
+
 @end
 
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    NSError *configureError;
+    [[GGLContext sharedInstance]configureWithError: &configureError];
+    
+    NSAssert(!configureError, @"Error : %@", configureError);
+    
+    [GIDSignIn sharedInstance].delegate = self;
+    
+    
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)app
+            openURL:(NSURL *)url
+            options:(NSDictionary *)options
+{
+    return [[GIDSignIn sharedInstance] handleURL:url
+                               sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]
+                                      annotation:options[UIApplicationOpenURLOptionsAnnotationKey]];
+}
+
+- (void)signIn:(GIDSignIn *)signIn
+didSignInForUser:(GIDGoogleUser *)user
+     withError:(NSError *)error
+{
+    self.googleUser = user;
+    
+    NSDictionary *userInfo = @{ @"userInfo" : self.googleUser };
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"addGoogleUserInfo" object:nil userInfo:userInfo];
+}
+
+- (void)signIn:(GIDSignIn *)signIn
+didDisconnectWithUser:(GIDGoogleUser *)user
+     withError:(NSError *)error {
+    // Perform any operations when the user disconnects from app here.
+    // ...
 }
 
 
